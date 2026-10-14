@@ -82,7 +82,6 @@ python -m scripts.manage import --places data/地名.txt --aliases data/地名_�
 ## 进一步阅读
 
 - [技术流程、接口与字段](docs/technical.md)
-- [项目目标、研究流程与未接入 ArcGIS 的原因](docs/project-history.md)
 
 ## 运行验证
 
