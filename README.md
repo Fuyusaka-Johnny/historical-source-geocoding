@@ -83,8 +83,6 @@ python -m scripts.manage import --places data/地名.txt --aliases data/地名_�
 
 - [技术流程、接口与字段](docs/technical.md)
 - [项目目标、研究流程与未接入 ArcGIS 的原因](docs/project-history.md)
-- [简历 STAR 文案与职责说明](docs/resume.md)
-- [GitHub 发布步骤与提交说明](docs/github.md)
 - [验证记录](docs/verification.md)
 
 ## 运行验证
