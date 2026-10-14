@@ -4,7 +4,7 @@
 
 ## 这个项目能做什么
 
-- 输入史料，按文本块调用可配置模型接口；默认使用 MiniMax-M2.5／ModelScope 配置。
+- 输入史料，按文本块调用可配置模型接口。
 - 解析 JSON、检查字段类型，并核查模型返回的原文引文是否存在于输入中。
 - 导入公开地名主表与可选别名表到 MySQL，按名称或别名查询候选。
 - 保留全部已返回的同名候选、资料出处和空坐标，不自动确认历史地点。
@@ -17,7 +17,7 @@
 
 ## 技术环境
 
-Python 3.11+；FastAPI、Uvicorn；Pydantic 2、JSON；OpenAI Python SDK（兼容接口客户端）、ModelScope API、MiniMax-M2.5（可配置模型）；MySQL 8.4、PyMySQL；HTML、CSS、原生 JavaScript；pytest／HTTPX。
+Python 3.11+；FastAPI、Uvicorn；Pydantic 2、JSON；OpenAI Python SDK（兼容接口客户端）、ModelScope API；MySQL 8.4、PyMySQL；HTML、CSS、原生 JavaScript；pytest／HTTPX。
 
 ## 快速开始：只查看人工演示
 
