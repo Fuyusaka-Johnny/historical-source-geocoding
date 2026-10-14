@@ -44,5 +44,5 @@ class MySQLRepository:
         with connection(self.settings) as conn:
             with conn.cursor() as cur:
                 cur.execute(sql, (name, name, name, limit + 1))
-                rows = cur.fetchall()
+                rows = list(cur.fetchall())
         return rows[:limit], len(rows) > limit

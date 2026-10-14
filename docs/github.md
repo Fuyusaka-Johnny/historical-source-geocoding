@@ -1,6 +1,6 @@
 # 发布到 GitHub
 
-建议仓库名称：`historical-source-geocoding`。先完整检查工程，再决定公开或私有；此说明不代表已经创建远程仓库。
+项目已提交至 [Fuyusaka-Johnny/historical-source-geocoding](https://github.com/Fuyusaka-Johnny/historical-source-geocoding)。以下步骤供后续更新或在新账户复现发布时参考。
 
 ## 仓库内容
 
