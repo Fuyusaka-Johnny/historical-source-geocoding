@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>史料信息整理与地名核验</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main>
+<header><p class="eyebrow">历史研究 · 工作流原型</p><h1>从史料文本，到可核验的地点线索</h1>
+<p>整理日期、人物与事件，查询历史地名候选。地点的历史含义和坐标仍需结合原文判断。</p></header>
+<div class="toolbar"><button id="demo" class="secondary">查看人工演示</button><span>演示使用虚构句子和坐标，无需模型或数据库。</span></div>
+<section class="workspace"><div class="panel input-panel"><h2>输入史料</h2>
+<label for="source">粘贴日文史料正文，建议先从少量条目开始</label>
+<textarea id="source" maxlength="30000" placeholder="请输入史料原文……"></textarea>
+<p class="hint">真实抽取将把文本发送至你在本地配置的模型服务。</p>
+<button id="extract">抽取信息并查询 MySQL</button>
+<details><summary>单独查询地名库</summary><form id="lookup"><input id="place" maxlength="255" placeholder="输入地名或已导入的别名" required><button class="secondary">查询</button></form><pre id="lookup-result"></pre></details>
+</div><div class="panel"><div class="result-heading"><h2>核验结果</h2><button id="export" class="secondary" disabled>导出 JSON</button></div>
+<p id="status" role="status" aria-live="polite">尚未处理。可先查看人工演示。</p><div id="results"></div>
+</div></section>
+<footer>当前为研究原型。未接入 ArcGIS；未自动判定历史地点；选择候选仅记录人工判断，不等于完成历史考证。</footer>
+</main><script src="/static/app.js"></script></body></html>
